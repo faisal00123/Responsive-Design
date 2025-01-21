@@ -1,0 +1,55 @@
+/* basic styles for all devices */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box{
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+    .box.mobile{
+        background-color: bisque;
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .box.tablet{
+        background-color: red;
+    }
+    .box{
+        width: 50%;
+    }
+}
+
+
+/* desktop */
+@media screen and (min-width:1024px) {
+    .box.desktop{
+        background-color: brown;
+    }
+    .box{
+        width: 33.3%;
+    }
+}
